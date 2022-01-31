@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title></title>
+<meta name="" content="">
+<link rel="stylesheet" href="css/jquery.dataTables.min.css" />
+<link href="css/bootstrap.min.css" rel="stylesheet" >
+<link rel="stylesheet" href="css/showtable.css" />
+<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+<script src="js/bootstrap.bundle.min.js" ></script>
+ 
+<script type="text/javascript" src="js/showtable.js"></script>
+
+<!-- JavaScript Bundle with Popper -->
+
+</head>
+<body>
+<div id="dWrapper">
+<div class="row">
+<div class="col-lg-2 col-md-2">
+<div id="dFilter">
+<h3 class="perc">Filters</h3>
+
+<div class="row">
+<div class="col-lg-12">
+<label for="propertyzip" class="col-form-label"><b>Property Zip Code:</b></label>
+<input class="form-control" id="propertyzip" type="text" placeholder="Zip Code">
+
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<label for="propertyyear" class="col-form-label"><b>Property Year Built:</b></label>
+<div class="row">
+<div class="col-lg-6">
+<input class="form-control col-lg-10" id="propyrfrom" placeholder="From">
+</div>
+<div class="col-lg-6">
+<input class="form-control" id="propyrto" placeholder="To">
+ </div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<label for="lotsize" class="col-form-label"><b>Lot Size (in Sq. ft):</b></label>
+<div class="row">
+<div class="col-lg-6">
+<input class="form-control col-lg-10" id="lotsizefrom" placeholder="From">
+</div>
+<div class="col-lg-6">
+<input class="form-control" id="lotsizeto" placeholder="To">
+ </div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-12">
+<label for="assessmentdate" class="col-form-label"><b>Assessment Date:</b></label>
+<div class="row">
+<div class="col-lg-6">
+<input class="form-control col-lg-10" id="assdfrom" placeholder="From" type="text">
+</div>
+<div class="col-lg-6">
+<input class="form-control" id="assdto" placeholder="To" type="text">
+ </div>
+</div>
+</div>
+</div>
+<div class="row">
+<label for="totalvalueamt" class="col-form-label"><b>Total Value Amt:</b></label>
+<div class="col-lg-12">
+<input class="form-control col-lg-10" id="totalvalueamtmin" placeholder="Minimum">
+</div>
+<div class="col-lg-12 mt-2">
+<input class="form-control" id="totalvalueamtmax" placeholder="Maximum">
+ </div>
+ </div>
+ <div class="row">
+<label class="col-form-label"><b>Address:</b></label>
+<div class="col-lg-12">
+<input class="form-control col-lg-10" id="addresstxt" placeholder="Address">
+</div>
+ </div>
+ <div class="row">
+<label class="col-form-label"><b>First Owner:</b></label>
+<div class="col-lg-12">
+<input class="form-control col-lg-10" id="ownername" placeholder="First Owner">
+</div>
+ </div>
+<div class="row mt-2">
+<div class="col-lg-12">
+
+<button type="button" id="searchBtn" class="btn btn-primary">Search</button>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-10 col-md-10">
+<div id="table-wrapper">
+  <div id="table-scroll">
+<table id="propdata" style="width:100%">
+        <thead>
+            <tr>
+			<th>Property Address</th>
+				<th>Zip Code</th>
+				<th>Lot Size</th>
+                <th>Property Year Built</th>
+				  <th>Owner Name</th>
+                <th>AssessmentDate</th>
+				<th>Total Value</th>
+                </tr>
+        </thead>
+		<tbody>
+		</tbody>
+		
+		</table>
+</div>
+</div>
+<div class="row mt-2">
+<div class="col-lg-8 col-md-8">
+<div class="recordinfo"></div>
+</div>
+<div class="col-lg-2 col-md-2 mr-2">
+<button type="button"  id="showprev" class="btn btn-primary">< PREVIOUS</button>
+</div>
+<div class="col-lg-2 col-md-2">
+<button type="button" id="shownext" class="btn btn-primary">NEXT ></button>
+</div>
+</div>
+<div id="tNotice"></div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>
